@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "angular.ng-template",
+    "angular.ng-template",
+    "cyrilletuzi.angular-schematics",
+    "natewallace.angular2-inline",
+    "steoates.autoimport",
+    "quicktype.quicktype",
+    "pmneo.tsimporter",
+    "aaron-bond.better-comments",
+    "usernamehw.errorlens",
+    "ms-azuretools.vscode-docker",
+    "editorconfig.editorconfig",
+    "aykutsarac.jsoncrack-vscode"
+  ]
+}
