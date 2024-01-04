@@ -1,3 +1,3 @@
 import "./style.css"
 
-// document.querySelector<HTMLDivElement>("#app")!.innerHTML = ``
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `Vite app`
