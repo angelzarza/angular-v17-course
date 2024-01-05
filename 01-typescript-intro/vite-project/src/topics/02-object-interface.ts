@@ -1,4 +1,4 @@
-interface CharacterInterface {
+interface Character {
   name: string,
   hp: number,
   shield: boolean,
@@ -6,7 +6,7 @@ interface CharacterInterface {
   level?: number
 }
 
-const warrior: CharacterInterface = {
+const warrior: Character = {
   name: "warrior",
   hp: 100,
   shield: true,
