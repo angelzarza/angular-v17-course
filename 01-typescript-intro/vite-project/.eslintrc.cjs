@@ -14,13 +14,8 @@ module.exports = {
         sourceType: "script",
       },
     },
-    {
-      files: "*.html",
-      options: {
-        parser: "html",
-      },
-    },
   ],
+  ignorePatterns: ["*.html"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
