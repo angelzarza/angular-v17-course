@@ -2,7 +2,8 @@ import "./style.css"
 // import { name, hpPoints, isAlive } from "./topics/01-basic-types"
 // import { warrior } from "./topics/02-object-interface"
 // import { result, resultArrow, warriorHp } from "./topics/03-functions"
-import { audioVolume, songDuration, song, details } from "./topics/05-basic-destructuring"
+// import { audioVolume, songDuration, song, details } from "./topics/05-basic-destructuring"
+import { shopingCart, result } from "./topics/06-functions-destructuring"
 
 /*
 * * Exercises by categories
@@ -31,13 +32,14 @@ import { audioVolume, songDuration, song, details } from "./topics/05-basic-dest
 <p>Author: ${details.author}</p>
 <p>Year: ${details.year}</p> */
 
+/* <h2>06-functions-destructuring</h2>
+<p>Carro: ${shopingCart[0].description}, ${shopingCart[1].description}</p>
+<p>Total: ${result}</p> */
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>05-basic-destructuring</h2>
-  <p>Audio Volume: ${audioVolume}</p>
-  <p>Song Duration: ${songDuration}</p>
-  <p>Song: ${song}</p>
-  <p>Author: ${details.author}</p>
-  <p>Year: ${details.year}</p>
+  <h2>06-functions-destructuring</h2>
+  <p>Carro: ${shopingCart[0].description}, ${shopingCart[1].description}</p>
+  <p>Total: ${result}</p>
 `
