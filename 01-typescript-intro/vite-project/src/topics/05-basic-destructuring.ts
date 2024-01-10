@@ -23,3 +23,11 @@ const audioPlayer: AudioPlayer = {
 export const { audioVolume, songDuration, song, details } = audioPlayer
 
 console.table(audioPlayer)
+
+const dbz: string[] = ["Goku", "Vegeta", "Cell"]
+
+const [goku, vegeta, cell] = dbz
+
+export { goku, vegeta, cell }
+
+console.log("Personaje 3:", dbz[3] ?? "Personaje no encontrado")
