@@ -3,7 +3,8 @@ import "./style.css"
 // import { warrior } from "./topics/02-object-interface"
 // import { result, resultArrow, warriorHp } from "./topics/03-functions"
 // import { audioVolume, songDuration, song, details } from "./topics/05-basic-destructuring"
-import { shopingCart, result } from "./topics/06-functions-destructuring"
+// import { shopingCart, result } from "./topics/06-functions-destructuring"
+import { total, taxProduct } from "./topics/07-import-export"
 
 /*
 * * Exercises by categories
@@ -36,10 +37,14 @@ import { shopingCart, result } from "./topics/06-functions-destructuring"
 <p>Carro: ${shopingCart[0].description}, ${shopingCart[1].description}</p>
 <p>Total: ${result}</p> */
 
+/* <h2>07-import-export</h2>
+<p>Total: ${total}</p>
+<p>Tax total: ${taxProduct}</p> */
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>06-functions-destructuring</h2>
-  <p>Carro: ${shopingCart[0].description}, ${shopingCart[1].description}</p>
-  <p>Total: ${result}</p>
+  <h2>07-import-export</h2>
+  <p>Total: ${total}</p>
+  <p>Tax total: ${taxProduct}</p>
 `
