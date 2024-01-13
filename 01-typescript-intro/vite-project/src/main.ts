@@ -4,7 +4,8 @@ import "./style.css"
 // import { result, resultArrow, warriorHp } from "./topics/03-functions"
 // import { audioVolume, songDuration, song, details } from "./topics/05-basic-destructuring"
 // import { shopingCart, result } from "./topics/06-functions-destructuring"
-import { total, taxProduct } from "./topics/07-import-export"
+// import { total, taxProduct } from "./topics/07-import-export"
+import { name, country } from "./topics/08-classes"
 
 /*
 * * Exercises by categories
@@ -44,7 +45,7 @@ import { total, taxProduct } from "./topics/07-import-export"
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>07-import-export</h2>
-  <p>Total: ${total}</p>
-  <p>Tax total: ${taxProduct}</p>
+  <h2>08-classes</h2>
+  <p>Nombre: ${name}</p>
+  <p>País: ${country}</p>
 `
