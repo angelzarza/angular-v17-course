@@ -5,7 +5,8 @@ import "./style.css"
 // import { audioVolume, songDuration, song, details } from "./topics/05-basic-destructuring"
 // import { shopingCart, result } from "./topics/06-functions-destructuring"
 // import { total, taxProduct } from "./topics/07-import-export"
-import { name, country } from "./topics/08-classes"
+// import { name, country } from "./topics/08-classes"
+import { amIString, amINumber, amIArray } from "./topics/09-generics"
 
 /*
 * * Exercises by categories
@@ -42,10 +43,20 @@ import { name, country } from "./topics/08-classes"
 <p>Total: ${total}</p>
 <p>Tax total: ${taxProduct}</p> */
 
+/* <h2>08-classes</h2>
+<p>Nombre: ${name}</p>
+<p>País: ${country}</p> */
+
+/* <h2>09-generics</h2>
+<p>String: ${amIString}</p>
+<p>Number: ${amINumber}</p>
+<p>Array: ${amIArray}</p> */
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>08-classes</h2>
-  <p>Nombre: ${name}</p>
-  <p>País: ${country}</p>
+  <h2>09-generics</h2>
+  <p>String: ${amIString}</p>
+  <p>Number: ${amINumber}</p>
+  <p>Array: ${amIArray}</p>
 `
