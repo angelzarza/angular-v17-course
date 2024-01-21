@@ -6,7 +6,8 @@ import "./style.css"
 // import { shopingCart, result } from "./topics/06-functions-destructuring"
 // import { total, taxProduct } from "./topics/07-import-export"
 // import { name, country } from "./topics/08-classes"
-import { amIString, amINumber, amIArray } from "./topics/09-generics"
+// import { amIString, amINumber, amIArray } from "./topics/09-generics"
+import { SuperClass } from "./topics/10-decorators"
 
 /*
 * * Exercises by categories
@@ -52,11 +53,12 @@ import { amIString, amINumber, amIArray } from "./topics/09-generics"
 <p>Number: ${amINumber}</p>
 <p>Array: ${amIArray}</p> */
 
+/* <h2>10-decorators</h2>
+<p>Decoradores: ${SuperClass}</p> */
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>09-generics</h2>
-  <p>String: ${amIString}</p>
-  <p>Number: ${amINumber}</p>
-  <p>Array: ${amIArray}</p>
+  <h2>10-decorators</h2>
+  <p>Decoradores: ${SuperClass}</p>
 `
