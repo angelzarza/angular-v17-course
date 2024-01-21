@@ -7,7 +7,8 @@ import "./style.css"
 // import { total, taxProduct } from "./topics/07-import-export"
 // import { name, country } from "./topics/08-classes"
 // import { amIString, amINumber, amIArray } from "./topics/09-generics"
-import { SuperClass } from "./topics/10-decorators"
+// import { SuperClass } from "./topics/10-decorators"
+import { passenger1, passenger2 } from "./topics/11-optional-chaining"
 
 /*
 * * Exercises by categories
@@ -56,9 +57,14 @@ import { SuperClass } from "./topics/10-decorators"
 /* <h2>10-decorators</h2>
 <p>Decoradores: ${SuperClass}</p> */
 
+/* <h2>11-optional-chainging</h2>
+<p>Pasajero 1: ${passenger1}</p>
+<p>Pasajero 2: ${passenger2}</p> */
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Vite app</h1>
   </br>
-  <h2>10-decorators</h2>
-  <p>Decoradores: ${SuperClass}</p>
+  <h2>11-optional-chainging</h2>
+  <p>Pasajero 1: ${passenger1.name} Hijos: ${passenger1.children}</p>
+  <p>Pasajero 2: ${passenger2.name} Hijos: ${passenger2.children}</p>
 `
