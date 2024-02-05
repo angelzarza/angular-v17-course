@@ -7,17 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string = 'Home';
-  public counter: number = 20;
-
-  increment(): void {
-    this.counter++
-  }
-
-  decrement(): void {
-    this.counter--
-  }
-
-  reset(): void {
-    this.counter = 0
-  }
 }
