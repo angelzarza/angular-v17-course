@@ -18,14 +18,15 @@ export class HeroComponent {
   }
 
   changeHero(): string {
-    this.name = this.name === 'spiderman' ? 'ironman' : 'spiderman';
-
-    return this.name;
+    return (this.name = 'spiderman');
   }
 
   changeAge(): number {
-    this.age = this.age === 23 ? 32 : 23;
-
-    return this.age;
+    return (this.age = 23);
   }
+
+  resetForm(): void {
+    this.name = 'ironman';
+    this.age = 32
+;  }
 }
