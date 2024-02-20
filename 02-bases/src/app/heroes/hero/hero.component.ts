@@ -14,6 +14,18 @@ export class HeroComponent {
   }
 
   getHeroDescription(): string {
-    return `${this.name} - ${this.age}`
+    return `${this.name} - ${this.age}`;
+  }
+
+  changeHero(): string {
+    this.name = this.name === 'spiderman' ? 'ironman' : 'spiderman';
+
+    return this.name;
+  }
+
+  changeAge(): number {
+    this.age = this.age === 23 ? 32 : 23;
+
+    return this.age;
   }
 }
