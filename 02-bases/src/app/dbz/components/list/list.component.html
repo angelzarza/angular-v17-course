@@ -4,8 +4,10 @@
   <li *ngFor="
       let character of characterList;
       let i = index;
+      let isFirst = first;
     "
-    class="list-group-item"
+      class="list-group-item"
+      [ngClass]="{ 'list-group-item-success': isFirst }"
   >
     <span class="text-primary">{{ i + 1 }}. </span>
     <span>{{ character.name }} -</span>
