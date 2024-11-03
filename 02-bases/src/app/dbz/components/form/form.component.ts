@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {Character} from "../../interfaces/character.interface";
 
 @Component({
@@ -7,12 +7,20 @@ import {Character} from "../../interfaces/character.interface";
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  @Output() onNewCharacter = new EventEmitter<Character>();
+
   public character: Character = {
     name: '',
     power: 0
   }
 
   emitCharacter() {
+    if (this.character.name.length === 0) return;
+
+    this.onNewCharacter.emit({...this.character});
+
     console.log(this.character);
+    this.character.name = ''
+    this.character.power = 0;
   }
 }
